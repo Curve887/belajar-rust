@@ -55,3 +55,9 @@ fn comment(){
     // ini komentar satu baris
     println!("Hello Ade"); // ini komentar 1 baris
 }
+
+#[test]
+fn explicit () {
+    let age: i32 = 20;
+    println!("{}", age);
+}
