@@ -26,10 +26,20 @@ fn test_mutable_variable(){
 
 #[test]
 fn static_typing(){
-    let mut name =  "Kurniawan Ade Putra";
+    let name =  "Kurniawan Ade Putra";
     println!("Hello {}", name);
 
     // name = 10;
-    
+
+    println!("Hello {}", name);
+}
+
+#[test]
+fn shadowing(){
+    let name =  "Kurniawan Ade Putra";
+    println!("Hello {}", name);
+
+    // name = 10;
+    let name = 10;
     println!("Hello {}", name);
 }
