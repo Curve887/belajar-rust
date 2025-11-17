@@ -10,14 +10,14 @@ fn hello_test() {
 }
 
 #[test]
-fn test_variable(){
-    let name= "Kurniawan Ade Putra";
+fn test_variable() {
+    let name = "Kurniawan Ade Putra";
     println!("Name: {}", name);
 }
 
 #[test]
-fn test_mutable_variable(){
-    let mut name =  "Kurniawan Ade Putra";
+fn test_mutable_variable() {
+    let mut name = "Kurniawan Ade Putra";
     println!("Hello {}", name);
 
     name = "Rahdatul Zaqia";
@@ -25,8 +25,8 @@ fn test_mutable_variable(){
 }
 
 #[test]
-fn static_typing(){
-    let name =  "Kurniawan Ade Putra";
+fn static_typing() {
+    let name = "Kurniawan Ade Putra";
     println!("Hello {}", name);
 
     // name = 10;
@@ -35,8 +35,8 @@ fn static_typing(){
 }
 
 #[test]
-fn shadowing(){
-    let name =  "Kurniawan Ade Putra";
+fn shadowing() {
+    let name = "Kurniawan Ade Putra";
     println!("Hello {}", name);
 
     // name = 10;
@@ -51,13 +51,38 @@ fn shadowing(){
     ini komentar lebih dari 1 baris
 */
 #[test]
-fn comment(){
+fn comment() {
     // ini komentar satu baris
     println!("Hello Ade"); // ini komentar 1 baris
 }
 
 #[test]
-fn explicit () {
+fn explicit() {
     let age: i32 = 20;
     println!("{}", age);
+}
+
+#[test]
+fn number() {
+    let a: i8 = 10;
+    println!("{}", a);
+
+    let b: f32 = 10.5;
+    println!("{}", b);
+}
+
+#[test]
+fn number_conversion() {
+    let a: i8 = 10;
+    println!("{}", a);
+
+    let b: i16 = a as i16;
+    println!("{}", b);
+
+    let c: i32 = b as i32;
+    println!("{}", c);
+
+    let d: i64 = 1000000000;
+    let e: i8 = d as i8; // akan overflow
+    println!("{}", e);
 }
