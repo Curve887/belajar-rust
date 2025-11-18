@@ -98,3 +98,15 @@ fn numeric_operator() {
     let e = a + b;
     println!("{}", e);
 }
+
+#[test]
+fn augmanted_assignment() {
+    let mut a = 10;
+    println!("{}", a);
+
+    a += 10;
+    println!("{}", a);
+
+    a -= 10;
+    println!("{}", a);
+}
