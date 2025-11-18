@@ -165,3 +165,17 @@ fn tuple() {
     data.2 = false; //mutable   
     println!("{:?}", data);
 }
+
+fn unit() {
+    println!("hello");
+}
+
+#[test]
+
+fn test_unit() {
+    let result: () = unit();
+    println!("{:?}", result);
+
+    let test: () = ();
+    println!("{:?}", test);
+}
