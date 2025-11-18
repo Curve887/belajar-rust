@@ -181,10 +181,14 @@ fn test_unit() {
 
 #[test]
 fn array() {
-    let array: [i32; 5] = [1, 2, 3, 4, 5];
+    let mut array: [i32; 5] = [1, 2, 3, 4, 5];
     println!("{:?}", array); 
 
     let a = array[0];
     let b: i32 = array[1];
     println!("{} {}", a, b);
+
+    array[0] = 10;
+    array[1] = 20;
+    println!("{:?}", array); 
 }
