@@ -86,3 +86,15 @@ fn number_conversion() {
     let e: i8 = d as i8; // akan overflow
     println!("{}", e);
 }
+
+#[test]
+fn numeric_operator() {
+    let a = 10;
+    let b = 10;
+    let c = a * b;
+    println!("{}", c);
+    let d = a / b;
+    println!("{}", d);
+    let e = a + b;
+    println!("{}", e);
+}
