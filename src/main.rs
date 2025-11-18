@@ -124,3 +124,16 @@ fn comparison() {
     let result: bool = 10 > 20;
     println!("{}", result);
 }
+
+#[test]
+fn boolean_operator() {
+    let absen = 70;
+    let nilai_akhir = 800;
+
+    let lulus = absen >= 75;
+    let lulus_nilai_akhir = nilai_akhir >= 75;
+
+    let lulus_final = lulus && lulus_nilai_akhir;
+
+    println!("{}", lulus_final);
+}
