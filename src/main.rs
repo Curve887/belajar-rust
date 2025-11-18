@@ -171,11 +171,20 @@ fn unit() {
 }
 
 #[test]
-
 fn test_unit() {
     let result: () = unit();
     println!("{:?}", result);
 
     let test: () = ();
     println!("{:?}", test);
+}
+
+#[test]
+fn array() {
+    let array: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("{:?}", array); 
+
+    let a = array[0];
+    let b: i32 = array[1];
+    println!("{} {}", a, b);
 }
