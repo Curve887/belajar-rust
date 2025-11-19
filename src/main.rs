@@ -143,7 +143,7 @@ fn char_type() {
     let char1: char = 'a';
     let char2: char = 'b';
 
-    println!("{} {}", char1, char2); 
+    println!("{} {}", char1, char2);
 }
 
 #[test]
@@ -151,13 +151,13 @@ fn tuple() {
     let mut data: (i32, f64, bool) = (10, 10.5, true);
     println!("{:?}", data);
 
-    /* 
+    /*
     // let a = data.0;
-    // let b = data.1;      
+    // let b = data.1;
     // let c = data.2;
-    */
+     */
 
-    let  (a, b, c) = data; // destructuring
+    let (a, b, c) = data; // destructuring
     println!("{} {} {}", a, b, c);
 
     data.0 = 20; // mutable
@@ -182,7 +182,7 @@ fn test_unit() {
 #[test]
 fn array() {
     let mut array: [i32; 5] = [1, 2, 3, 4, 5];
-    println!("{:?}", array); 
+    println!("{:?}", array);
 
     let a = array[0];
     let b: i32 = array[1];
@@ -190,5 +190,9 @@ fn array() {
 
     array[0] = 10;
     array[1] = 20;
-    println!("{:?}", array); 
+    println!("{:?}", array);
+
+    let length: usize = array.len();
+    println!("{}", length);
 }
+    
