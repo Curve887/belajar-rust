@@ -195,4 +195,22 @@ fn array() {
     let length: usize = array.len();
     println!("{}", length);
 }
+
+#[test]
+fn two_dimensional_array() {  // ARRAY DI DALAM ARRAY
+    let matrix: [[i32; 3]; 2] = [
+        [1, 2, 3],
+        [3, 4, 5]
     
+    ];
+
+    println!("{:?}", matrix);
+    println!("{:?}", matrix[0]);
+    println!("{:?}", matrix[0][0]);
+    println!("{:?}", matrix[0][1]);
+    println!("{:?}", matrix[0][2]);
+    println!("{:?}", matrix[1]);
+    println!("{:?}", matrix[1][0]);
+    println!("{:?}", matrix[1][1]);
+    println!("{:?}", matrix[1][2]);
+}
