@@ -279,3 +279,16 @@ fn string_type() {
     let budi = name.replace("Ade", "budi");
     println!("{}", budi);
 }
+
+#[test]
+fn ownership_rules() {
+    let a = 10;
+
+    {
+        let b = 10;
+        println!("{}", b);
+    }
+
+   // println!("{}", b); // error karena b sudah tidak valid di sini
+    println!("{}", a);
+}
