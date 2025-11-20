@@ -236,3 +236,21 @@ fn variable_scope() {
 
     // println!("kurniawan di luar scope: {}", kurniawan); // error
 }
+
+#[test]
+fn stack_heap() {
+    function_a();
+    function_b();
+}
+
+fn function_a() {
+    let a =  10;
+    let b= String::from("kurniawan");
+    println!("{} {}", a, b);
+}
+
+fn function_b() {
+    let a = 10;
+    let b = String::from("Ade");
+    println!("{} {}", a, b);
+}
