@@ -263,9 +263,9 @@ fn string() {
     println!("'{}'", name);
     println!("'{}'", trim);
 
-    let mut username: &str = "Ade";
-    username = "Zaqia";
-    println!("{}", username);
+    // let mut username: &str = "Ade";
+    // username = "Zaqia";
+    // println!("{}", username);
 }
 
 #[test]
@@ -291,4 +291,12 @@ fn ownership_rules() {
 
    // println!("{}", b); // error karena b sudah tidak valid di sini
     println!("{}", a);
+}
+#[test]
+fn data_copy() {
+    let a = 10;
+    let mut b = a; // data di copy
+
+    b = 20;
+    println!("{} {}", a, b);
 }
