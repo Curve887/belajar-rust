@@ -300,3 +300,13 @@ fn data_copy() {
     b = 20;
     println!("{} {}", a, b);
 }
+
+#[test]
+fn ownership_movement() {
+    let name1: String = String::from("Ade");
+    println!("{}", name1);
+
+    let name2: String = name1; // ownership berpindah dari name1 ke name2
+    println!("{}", name2);
+    // println!("{}", name1); // error karena name1 sudah tidak valid di sini
+}
