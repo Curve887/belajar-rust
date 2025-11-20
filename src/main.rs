@@ -220,3 +220,19 @@ fn constant() {
     const MINIMUM: i32 = 10; // untuk nama variabel constant biasanya pakai huruf besar semua
     println!("{} {}", MINIMUM, MAXIMUM);
 }
+
+#[test]
+fn variable_scope() {
+
+
+    let ade = 1;
+
+    {
+        println!("ade di dalam scope: {}", ade);
+
+        let kurniawan = 2;
+        println!("kurniawan di dalam scope: {}", kurniawan);
+    }
+
+    // println!("kurniawan di luar scope: {}", kurniawan); // error
+}
