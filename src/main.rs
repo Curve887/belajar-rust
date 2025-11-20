@@ -268,3 +268,14 @@ fn string() {
     println!("{}", username);
 }
 
+#[test]
+fn string_type() {
+    let mut name: String = String::from("Kurniawan Ade");
+    println!("{}", name);
+
+    name.push_str(" Putra");
+    println!("{}", name);
+
+    let budi = name.replace("Ade", "budi");
+    println!("{}", budi);
+}
