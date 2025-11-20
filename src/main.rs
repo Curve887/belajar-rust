@@ -197,12 +197,9 @@ fn array() {
 }
 
 #[test]
-fn two_dimensional_array() {  // ARRAY DI DALAM ARRAY
-    let matrix: [[i32; 3]; 2] = [
-        [1, 2, 3],
-        [3, 4, 5]
-    
-    ];
+fn two_dimensional_array() {
+    // ARRAY DI DALAM ARRAY
+    let matrix: [[i32; 3]; 2] = [[1, 2, 3], [3, 4, 5]];
 
     println!("{:?}", matrix);
     println!("{:?}", matrix[0]);
@@ -213,4 +210,13 @@ fn two_dimensional_array() {  // ARRAY DI DALAM ARRAY
     println!("{:?}", matrix[1][0]);
     println!("{:?}", matrix[1][1]);
     println!("{:?}", matrix[1][2]);
+}
+
+const MAXIMUM: i32 = 100;
+
+#[test]
+fn constant() {
+    // ARRAY DI DALAM ARRAY
+    const MINIMUM: i32 = 10; // untuk nama variabel constant biasanya pakai huruf besar semua
+    println!("{} {}", MINIMUM, MAXIMUM);
 }
