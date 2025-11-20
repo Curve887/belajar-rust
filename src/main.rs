@@ -317,3 +317,12 @@ fn clone() {
     let name2 = name1.clone(); // data di clone
     println!("{} {}", name1 , name2);
 }
+
+#[test]
+fn if_expression() {
+    let value = 9;
+
+    if value >= 8 {
+        println!("lulus!");
+    }
+}
