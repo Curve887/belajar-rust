@@ -254,3 +254,17 @@ fn function_b() {
     let b = String::from("Ade");
     println!("{} {}", a, b);
 }
+
+#[test]
+fn string() {
+    let name: &str = "  Kurniawan Ade Putra    ";
+    let trim: &str = name.trim();
+
+    println!("'{}'", name);
+    println!("'{}'", trim);
+
+    let mut username: &str = "Ade";
+    username = "Zaqia";
+    println!("{}", username);
+}
+
