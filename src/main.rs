@@ -310,3 +310,10 @@ fn ownership_movement() {
     println!("{}", name2);
     // println!("{}", name1); // error karena name1 sudah tidak valid di sini
 }
+
+#[test]
+fn clone() {
+    let name1  = String::from("Ade");
+    let name2 = name1.clone(); // data di clone
+    println!("{} {}", name1 , name2);
+}
