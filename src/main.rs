@@ -331,3 +331,18 @@ fn if_expression() {
 
     println!("{}", result);
 }
+
+#[test]
+fn loop_expression() {
+    let mut counter = 0;
+
+    loop {
+        counter += 1;
+
+        if counter > 10 {
+            break;
+        }
+
+        println!("Counter: {}", counter);
+    }
+}
