@@ -223,8 +223,6 @@ fn constant() {
 
 #[test]
 fn variable_scope() {
-
-
     let ade = 1;
 
     {
@@ -244,8 +242,8 @@ fn stack_heap() {
 }
 
 fn function_a() {
-    let a =  10;
-    let b= String::from("kurniawan");
+    let a = 10;
+    let b = String::from("kurniawan");
     println!("{} {}", a, b);
 }
 
@@ -289,7 +287,7 @@ fn ownership_rules() {
         println!("{}", b);
     }
 
-   // println!("{}", b); // error karena b sudah tidak valid di sini
+    // println!("{}", b); // error karena b sudah tidak valid di sini
     println!("{}", a);
 }
 #[test]
@@ -313,16 +311,22 @@ fn ownership_movement() {
 
 #[test]
 fn clone() {
-    let name1  = String::from("Ade");
+    let name1 = String::from("Ade");
     let name2 = name1.clone(); // data di clone
-    println!("{} {}", name1 , name2);
+    println!("{} {}", name1, name2);
 }
 
 #[test]
 fn if_expression() {
     let value = 9;
 
-    if value >= 8 {
+    if value >= 10 {
         println!("lulus!");
+    } else if value >= 6 {
+        println!("Not bad!");
+    } else if value >= 3 {
+        println!("bad!");
+    } else {
+        println!("Very Bad!");
     }
 }
