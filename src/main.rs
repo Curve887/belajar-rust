@@ -318,15 +318,16 @@ fn clone() {
 
 #[test]
 fn if_expression() {
-    let value = 9;
-
-    if value >= 10 {
-        println!("lulus!");
+    let value = 10;
+    let result: &str = if value >= 8 {
+        "Good!"
     } else if value >= 6 {
-        println!("Not bad!");
+        "Not Bad!"
     } else if value >= 3 {
-        println!("bad!");
+        "Bad!"
     } else {
-        println!("Very Bad!");
-    }
+        "Very Bad!"
+    };
+
+    println!("{}", result);
 }
