@@ -428,3 +428,14 @@ fn range() {
         println!("{}", array[i]);   
     }
 }
+fn say_hello() {
+    println!("Hello" );
+}
+
+#[test]
+fn test_say_hello() {
+    say_hello();    
+    say_hello();
+    say_hello();
+    say_hello();
+}
