@@ -415,3 +415,16 @@ fn array_iteration_for_loop() {
         println!("Value : {}", value);
     }
 }
+
+#[test]
+fn range() {
+    let array: [&str; 5] = ["A","B","C","D","E"];
+
+    let range = 0..5;
+    println!("start : {}", range.start);
+    println!("end : {}", range.end); 
+
+    for i in range {
+        println!("{}", array[i]);   
+    }
+}
