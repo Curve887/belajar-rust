@@ -452,3 +452,23 @@ fn test_goodbye() {
     say_goodbye("Joko ", "Susilo");
 }
 
+fn factorial_loop(n: i32) -> i32 {
+    if n < 1 {
+        return 0;
+    }
+    
+    let mut result = 1;
+    for i in 1..=n {
+        result *= i;
+    }
+    result   
+}
+
+#[test]
+fn test_factorial_loop() {
+    let result: i32 = factorial_loop(5);
+    println!("{}", result);
+
+    let result: i32 = factorial_loop(-10);
+    println!("{}", result);
+}
