@@ -406,3 +406,12 @@ fn array_iteration() {
         index +=1;
     }
 }
+
+#[test]
+fn array_iteration_for_loop() {
+    let array: [&str; 5] = ["A","B","C","D","E"];
+    
+    for value in array {
+        println!("Value : {}", value);
+    }
+}
