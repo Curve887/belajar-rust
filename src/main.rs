@@ -439,3 +439,16 @@ fn test_say_hello() {
     say_hello();
     say_hello();
 }
+
+
+fn say_goodbye(first_name: &str, last_name: &str) {
+    println!("Goodbye {} {}", first_name, last_name);
+}
+
+#[test]
+fn test_goodbye() {
+    say_goodbye("kurniawan ", "Ade Putra");
+    say_goodbye("Budy ", "Nugraha");
+    say_goodbye("Joko ", "Susilo");
+}
+
