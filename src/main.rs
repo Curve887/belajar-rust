@@ -499,4 +499,23 @@ fn factorial_recursive(n: u32) -> u32 {
 fn test_factorial_recursive() {
     let result = factorial_recursive(5);
     println!("{}", result);
+} 
+
+fn print_number (number: i32) {
+    println!("number: {}", number);
+}
+
+fn hi (nama: String) {
+    println!("hi {}", nama);
+}
+
+#[test]
+fn test_hi() {
+    let number = 10;
+    print_number(number);
+    println!("{}", number);
+
+    let name = String::from("Ade");
+    hi(name);
+    // println!("{}", name);
 }
